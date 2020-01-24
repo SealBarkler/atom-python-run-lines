@@ -1,5 +1,6 @@
 {
   "atom-workspace": {
-    "ctrl-alt-o": "atom-python-run-lines:toggle"
+    "F8": "atom-python-run-lines:run",
+    "F9": "atom-python-run-lines:runLines"
   }
 }

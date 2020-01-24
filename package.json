@@ -3,10 +3,10 @@
   "main": "./lib/atom-python-run-lines",
   "version": "0.0.0",
   "description": "A short description of your package",
-  "keywords": [
-  ],
+  "keywords": [],
   "activationCommands": {
-    "atom-workspace": "atom-python-run-lines:toggle"
+    "atom-workspace": "atom-python-run-lines:runLines",
+    "atom-workspace": "atom-python-run-lines:run"
   },
   "repository": "https://github.com/atom/atom-python-run-lines",
   "license": "MIT",
@@ -14,5 +14,6 @@
     "atom": ">=1.0.0 <2.0.0"
   },
   "dependencies": {
+    "python-shell": "^1.0.8"
   }
 }

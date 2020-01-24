@@ -15,7 +15,7 @@ describe('AtomPythonRunLines', () => {
     activationPromise = atom.packages.activatePackage('atom-python-run-lines');
   });
 
-  describe('when the atom-python-run-lines:toggle event is triggered', () => {
+  describe('when the atom-python-run-lines:runLines event is triggered', () => {
     it('hides and shows the modal panel', () => {
       // Before the activation event the view is not on the DOM, and no panel
       // has been created
@@ -23,7 +23,7 @@ describe('AtomPythonRunLines', () => {
 
       // This is an activation event, triggering it will cause the package to be
       // activated.
-      atom.commands.dispatch(workspaceElement, 'atom-python-run-lines:toggle');
+      atom.commands.dispatch(workspaceElement, 'atom-python-run-lines:runLines');
 
       waitsForPromise(() => {
         return activationPromise;
@@ -37,7 +37,7 @@ describe('AtomPythonRunLines', () => {
 
         let atomPythonRunLinesPanel = atom.workspace.panelForItem(atomPythonRunLinesElement);
         expect(atomPythonRunLinesPanel.isVisible()).toBe(true);
-        atom.commands.dispatch(workspaceElement, 'atom-python-run-lines:toggle');
+        atom.commands.dispatch(workspaceElement, 'atom-python-run-lines:runLines');
         expect(atomPythonRunLinesPanel.isVisible()).toBe(false);
       });
     });
@@ -55,7 +55,7 @@ describe('AtomPythonRunLines', () => {
 
       // This is an activation event, triggering it causes the package to be
       // activated.
-      atom.commands.dispatch(workspaceElement, 'atom-python-run-lines:toggle');
+      atom.commands.dispatch(workspaceElement, 'atom-python-run-lines:runLines');
 
       waitsForPromise(() => {
         return activationPromise;
@@ -65,7 +65,7 @@ describe('AtomPythonRunLines', () => {
         // Now we can test for view visibility
         let atomPythonRunLinesElement = workspaceElement.querySelector('.atom-python-run-lines');
         expect(atomPythonRunLinesElement).toBeVisible();
-        atom.commands.dispatch(workspaceElement, 'atom-python-run-lines:toggle');
+        atom.commands.dispatch(workspaceElement, 'atom-python-run-lines:runLines');
         expect(atomPythonRunLinesElement).not.toBeVisible();
       });
     });

@@ -2,8 +2,12 @@
   "context-menu": {
     "atom-text-editor": [
       {
-        "label": "Toggle atom-python-run-lines",
-        "command": "atom-python-run-lines:toggle"
+        "label": "Run atom-python-run-lines lines",
+        "command": "atom-python-run-lines:runLines"
+      },
+      {
+        "label": "Run atom-python-run-lines all",
+        "command": "atom-python-run-lines:run"
       }
     ]
   },
@@ -15,8 +19,12 @@
           "label": "atom-python-run-lines",
           "submenu": [
             {
-              "label": "Toggle",
-              "command": "atom-python-run-lines:toggle"
+              "label": "Run lines",
+              "command": "atom-python-run-lines:runLines"
+            },
+            {
+              "label": "Run all",
+              "command": "atom-python-run-lines:run"
             }
           ]
         }
