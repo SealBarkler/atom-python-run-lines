@@ -1,7 +1,7 @@
 {
   "name": "atom-python-run-lines",
   "main": "./lib/atom-python-run-lines",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Run parts of (F9) or even full (F8) python scripts",
   "keywords": [],
   "activationCommands": {
