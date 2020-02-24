@@ -1,10 +1,11 @@
 {
   "name": "atom-python-run-lines",
   "main": "./lib/atom-python-run-lines",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "description": "A short description of your package",
   "keywords": [],
   "activationCommands": {
+    "atom-workspace": "atom-python-run-lines:runLines",
     "atom-workspace": "atom-python-run-lines:run"
   },
   "repository": "https://github.com/atom/atom-python-run-lines",
