@@ -2,13 +2,13 @@
   "name": "atom-python-run-lines",
   "main": "./lib/atom-python-run-lines",
   "version": "0.0.0",
-  "description": "A short description of your package",
+  "description": "Run parts of (F9) or even full (F8) python scripts",
   "keywords": [],
   "activationCommands": {
     "atom-workspace": "atom-python-run-lines:runLines",
     "atom-workspace": "atom-python-run-lines:run"
   },
-  "repository": "https://github.com/atom/atom-python-run-lines",
+  "repository": "https://github.com/SealBarkler/atom-python-run-lines",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
